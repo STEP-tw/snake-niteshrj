@@ -1,9 +1,10 @@
-let snake=undefined;
 let food=undefined;
 let numberOfRows=60;
 let numberOfCols=120;
-
 let animator=undefined;
+
+const game = new Game(numberOfRows,numberOfCols);
+const snake = game.createSnake();
 
 const animateSnake=function() {
   let oldHead=snake.getHead();
@@ -41,22 +42,11 @@ const addKeyListener=function() {
   grid.focus();
 }
 
-const createSnake=function() {
-  let tail=new Position(12,10,"east");
-  let body=[];
-  body.push(tail);
-  body.push(tail.next());
-  let head=tail.next().next();
-
-  snake=new Snake(head,body);
-}
-
 const createFood=function(numberOfRows,numberOfCols) {
   food=generateRandomPosition(numberOfCols,numberOfRows);
 }
 
 const startGame=function() {
-  createSnake();
   drawGrids(numberOfRows,numberOfCols);
   drawSnake(snake);
   createFood(numberOfRows,numberOfCols);
