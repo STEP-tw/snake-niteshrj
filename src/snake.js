@@ -31,16 +31,16 @@ Snake.prototype={
     return this.getHead()['y'];
   },
   isAtTopEnd:function() {
-    return this.getHeadYCord()==-1;
+    return this.getHeadYCord()<=-1;
   },
   isAtBottomEnd:function(numberOfRows) {
-    return this.getHeadYCord()==numberOfRows;
+    return this.getHeadYCord()>=numberOfRows;
   },
   isAtLeftEnd:function() {
-    return this.getHeadXCord()==-1;
+    return this.getHeadXCord()<=-1;
   },
   isAtRightEnd:function(numberOfCols) {
-    return this.getHeadXCord()==numberOfCols;
+    return this.getHeadXCord()>=numberOfCols;
   },
   isEatingItself:function() {
     return this.getBody().some(function(body){
