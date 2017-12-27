@@ -33,6 +33,15 @@ Snake.prototype={
   },
   isAtTopEnd:function() {
     return this.getYCord()==-1;
+  },
+  isAtBottomEnd:function() {
+    return this.getYCord()==60;
+  },
+  isAtLeftEnd:function() {
+    return this.getXCord()==-1;
+  },
+  isAtRightEnd:function() {
+    return this.getXCord()==120;
   }
 
 }
