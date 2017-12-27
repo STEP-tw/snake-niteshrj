@@ -10,10 +10,11 @@
 #grid td {
   width: 8px;
   height: 8px;
+  border: 1px solid black;
 }
 
 .snake {
-  background-color: black;
+  background-color: red;
 }
 
 .snake_head {

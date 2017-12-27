@@ -9,6 +9,11 @@ const animateSnake=function() {
   let oldHead=snake.getHead();
   let oldTail=snake.move();
   let head=snake.getHead();
+  // alert(JSON.stringify(snake.getHead()));
+  // if(snake.getHead()['y']==-1){
+  //   alert("gameOver")
+  // }
+  checkGameOver();
   paintBody(oldHead);
   unpaintSnake(oldTail);
   paintHead(head);
