@@ -1,11 +1,7 @@
 const checkGameOver = function(numberOfRows,numberOfCols){
-  if(snake.isAtTopEnd()){
+  if(snake.isAtTopEnd() || snake.isAtBottomEnd(numberOfRows)){
     alert("Game over");
-  }else if(snake.isAtBottomEnd(numberOfRows)){
-    alert("Game over");
-  }else if(snake.isAtLeftEnd()){
-    alert("Game over");
-  }else if(snake.isAtRightEnd(numberOfCols)){
+  }else if(snake.isAtLeftEnd() || snake.isAtRightEnd(numberOfCols)){
     alert("Game over");
   }
 }

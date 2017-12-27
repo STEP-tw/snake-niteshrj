@@ -17,7 +17,6 @@ Snake.prototype={
   },
   grow:function() {
     this.body.unshift(new Position(Infinity,Infinity,this.direction));
-    alert(JSON.stringify(this.getBody()));
   },
   turnLeft:function() {
     this.head=this.head.turnLeft();
