@@ -30,6 +30,9 @@ Snake.prototype={
   },
   getYCord:function() {
     return this.getHead()['y'];
+  },
+  isAtTopEnd:function() {
+    return this.getYCord()==-1;
   }
 
 }
