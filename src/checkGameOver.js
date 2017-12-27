@@ -8,5 +8,4 @@ const checkGameOver = function(numberOfRows,numberOfCols){
   }else if(snake.isAtRightEnd(numberOfCols)){
     alert("Game over");
   }
-  // alert(JSON.stringify(snake.getBody()));
 }

@@ -17,6 +17,7 @@ Snake.prototype={
   },
   grow:function() {
     this.body.unshift(new Position(Infinity,Infinity,this.direction));
+    alert(JSON.stringify(this.getBody()));
   },
   turnLeft:function() {
     this.head=this.head.turnLeft();
@@ -24,24 +25,23 @@ Snake.prototype={
   turnRight:function() {
     this.head=this.head.turnRight();
   },
-  getXCord:function() {
+  getHeadXCord:function() {
     return this.getHead()['x'];
   },
-  getYCord:function() {
+  getHeadYCord:function() {
     return this.getHead()['y'];
   },
   isAtTopEnd:function() {
-    return this.getYCord()==-1;
+    return this.getHeadYCord()==-1;
   },
   isAtBottomEnd:function(numberOfRows) {
-    // alert(numberOfRows);
-    return this.getYCord()==numberOfRows;
+    return this.getHeadYCord()==numberOfRows;
   },
   isAtLeftEnd:function() {
-    return this.getXCord()==-1;
+    return this.getHeadXCord()==-1;
   },
   isAtRightEnd:function(numberOfCols) {
-    return this.getXCord()==numberOfCols;
+    return this.getHeadXCord()==numberOfCols;
   }
 
 }
