@@ -1,3 +1,6 @@
 ✔ Understand the how the grid is built.  @done(2017-12-27 11:08)
-☐ Display the grid lines.
-☐ Find a way to get the position of the end of the grid.
+✔ Display the grid lines. @done(2017-12-27 11:45)
+✔ Find a way to get the position of the end of the grid. @done(2017-12-27 11:45)
+✔ Detect all corners end. @done(2017-12-27 11:46)
+☐ Get a way to get the number of boxes at run time.
+☐ Find a way to get snake body position to detect self collision.
