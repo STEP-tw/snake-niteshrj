@@ -41,6 +41,11 @@ Snake.prototype={
   },
   isAtRightEnd:function(numberOfCols) {
     return this.getHeadXCord()==numberOfCols;
+  },
+  isEatingItself:function() {
+    return this.getBody().some(function(body){
+      return (body.x==this.getHead()['x'] && body.y==this.getHead()['y']);
+    })
   }
 
 }
