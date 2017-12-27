@@ -13,7 +13,6 @@ Snake.prototype={
   move:function() {
     this.body.push(this.head);
     this.head=this.head.next();
-    console.log(this.head.next());
     return this.body.shift();
   },
   grow:function() {
@@ -34,14 +33,15 @@ Snake.prototype={
   isAtTopEnd:function() {
     return this.getYCord()==-1;
   },
-  isAtBottomEnd:function() {
-    return this.getYCord()==60;
+  isAtBottomEnd:function(numberOfRows) {
+    // alert(numberOfRows);
+    return this.getYCord()==numberOfRows;
   },
   isAtLeftEnd:function() {
     return this.getXCord()==-1;
   },
-  isAtRightEnd:function() {
-    return this.getXCord()==120;
+  isAtRightEnd:function(numberOfCols) {
+    return this.getXCord()==numberOfCols;
   }
 
 }
