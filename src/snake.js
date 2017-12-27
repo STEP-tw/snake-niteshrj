@@ -47,5 +47,4 @@ Snake.prototype={
       return (body.x==this.getHead()['x'] && body.y==this.getHead()['y']);
     })
   }
-
 }
