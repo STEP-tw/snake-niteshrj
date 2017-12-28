@@ -10,7 +10,9 @@ const animateSnake=function() {
   let oldHead=snake.getHead();
   let oldTail=snake.move();
   let head=snake.getHead();
-  checkGameOver(numberOfRows,numberOfCols);
+  if(game.isOver()){
+    alert("Game Over");
+  }
   paintBody(oldHead);
   unpaintSnake(oldTail);
   paintHead(head);

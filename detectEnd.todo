@@ -2,5 +2,15 @@
 ✔ Display the grid lines. @done(2017-12-27 11:45)
 ✔ Find a way to get the position of the end of the grid. @done(2017-12-27 11:45)
 ✔ Detect all corners end. @done(2017-12-27 11:46)
-☐ Get a way to get the number of boxes at run time.
-☐ Find a way to get snake body position to detect self collision.
+✔ Get a way to get the number of boxes at run time. @done(2017-12-27 12:22)
+✔ Find a way to get snake body position to detect self collision. @done(2017-12-27 12:22)
+✔ Get body position coordinates. @done(2017-12-27 14:50)
+✔ Detect collision from its own body. @done(2017-12-28 00:12)
+✔ Add todo to .gitignore. @done(2017-12-28 00:31)
+✔ Add .gitignore file to .gitignore. @done(2017-12-28 00:32)
+✔ Make a Game Object. @done(2017-12-28 00:13)
+✔ Give creatingSnake as behaviour to game object. @done(2017-12-28 00:13)
+☐ Remove alert.
+☐ Add a button to start the game.
+☐ Recognise behaviours of game object and give it to game.
+✔ Put Game over to game. @done(2017-12-28 09:49)

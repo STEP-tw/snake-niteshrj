@@ -12,3 +12,9 @@ Game.prototype.createSnake = function(){
   let head=tail.next().next();
   return new Snake(head,body);
 }
+
+Game.prototype.isOver = function(){
+  let isVerticalWallsHit = snake.isAtTopEnd() || snake.isAtBottomEnd(this.rows);
+  let isHorizontalWallsHit = snake.isAtLeftEnd() || snake.isAtRightEnd(this.columns);
+  return isVerticalWallsHit || isHorizontalWallsHit;
+}
